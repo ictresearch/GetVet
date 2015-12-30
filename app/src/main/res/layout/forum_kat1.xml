@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prev_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_category_thread"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/new64"
+                android:id="@+id/imgNew" />
+        </TableRow>
+    </TableLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/llBody">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llSearch"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvkat"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Category"
+                android:gravity="center_vertical"
+                android:background="@drawable/round_image"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:background="@drawable/round_image"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:textColor="#000000"
+                android:prompt="@string/spinner_title"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etxCari"
+                    android:background="@drawable/round_edit_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="Type Title, Content or User."
+                    android:layout_height="50dp"
+                    android:textColor="#2b005c"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:imeOptions="actionSearch"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Search"
+                    android:id="@+id/btnSave"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/round_btn_search"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/button_text_size"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+            <!--<ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/down_icon"
+                android:scaleType="fitCenter"
+                android:background="@drawable/round_edit"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/imgdown" />-->
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvKatforum"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#e64c65"
+            android:dividerHeight="1dip"
+            android:paddingBottom="70dp"
+            android:footerDividersEnabled="true"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:id="@+id/imgBanner"/>
+</FrameLayout>
+</LinearLayout>

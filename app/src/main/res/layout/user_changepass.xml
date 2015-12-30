@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prev_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_ubahpassword"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/home_icon_64"
+                android:id="@+id/imgHome" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="@dimen/fix_width_layout"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/eOldpass"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/oldpass_hint"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8f8497"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/lock_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/eNewpass"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/newpass_hint"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8f8497"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/unlock_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/btn_save_profile"
+                    android:id="@+id/btnSave"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_selector"
+                    android:textColor="@color/btn_color_selector"
+                    android:textSize="@dimen/button_text_size" />
+
+            </LinearLayout>
+        </ScrollView>
+    </TableLayout>
+</LinearLayout>

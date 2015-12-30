@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_settings"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/next_icon_64"
+                android:id="@+id/imgBack" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/contact"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenuprofile" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_profile"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenuprofile" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivprofile">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/vet"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenuvet"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_vet_clinic"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenuvet"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivvetclinic"
+                android:visibility="gone">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/shop_64"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenushop"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_shop"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenushop"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivpetshop"
+                android:visibility="gone">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/cat_64"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenucatken"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_catken"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenucatken"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivcatken"
+                android:visibility="gone">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/price_tag_64"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenuseponsor" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_spr"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenuseponsor" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivseponsor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/notif_64"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgSettingNotif" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_notif"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvSettingNotif" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivSettingsNotif" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/about"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenuterm" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_tos"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenuterm" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivterm">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/rating"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenurate" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_rate"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenurate" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivrate">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/exit"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenuout" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="@string/settings_logout"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenuout" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivout">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/info_64"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenuver" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text=""
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenuver" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivver">
+            </TextView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

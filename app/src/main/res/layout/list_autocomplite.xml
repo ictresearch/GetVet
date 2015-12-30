@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/round_list_autocomplite">
+
+    <TextView
+        android:id="@+id/textauto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2b005c"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/button_text_size"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

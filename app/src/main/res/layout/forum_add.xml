@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        android:id="@+id/tblTop">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prev_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_forumadd"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/home_icon_64"
+                android:id="@+id/imgHome" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/LL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/textViewTitle"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        android:id="@+id/edtTitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_image"
+                        android:hint="Title"
+                        android:textColorHint="#000000"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:background="@drawable/round_image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:textColor="#000000"
+                        android:prompt="@string/spinner_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/round_image"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/LL"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subcategory_chose"
+                        android:id="@+id/tvHewan"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:text="@string/petname_1st"
+                            android:id="@+id/chbKucing"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_4th"
+                            android:id="@+id/chbEquine"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_2nd"
+                            android:id="@+id/chbAnjing"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_5th"
+                            android:id="@+id/chbfish"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:text="@string/petname_3rd"
+                            android:id="@+id/chbBurung"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_7th"
+                            android:id="@+id/chbExotic"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="5dp">
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_6th"
+                            android:id="@+id/chbReptile"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:textSize="@dimen/text_size" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_8th"
+                            android:id="@+id/chbOther"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:button="@drawable/chb_icon"
+                            android:paddingLeft="5dp"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/tvfoto"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="50dp"
+                        android:text="Add image.."
+                        android:textSize="@dimen/text_size"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"/>
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_weight="0.1"
+                        android:layout_height="50dp"
+                        android:src="@drawable/remove_img_blue_64"
+                        android:background="@android:color/white"
+                        android:id="@+id/btnClearPhoto"
+                        android:visibility="gone"
+                        android:scaleType="fitCenter"/>
+                </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/picture_100_blue"
+                        android:id="@+id/imgPhoto"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                <ScrollView
+                    android:id="@+id/scrollViewEditor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/lnlAction"
+                    android:layout_below="@+id/LL1">
+
+                    <windyzboy.github.io.customeeditor.CustomEditText
+                        android:id="@+id/CustomEditor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:inputType="textFilter|textMultiLine|textNoSuggestions"
+                        android:minLines="2"
+                        android:background="@drawable/round_image"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+                        >
+
+                        <!--<requestFocus />-->
+                    </windyzboy.github.io.customeeditor.CustomEditText>
+                </ScrollView>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/btn_post"
+                    android:id="@+id/btnSave"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_selector"
+                    android:textColor="@color/btn_color_selector"
+                    android:textSize="@dimen/button_text_size"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gainsboro"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ToggleButton
+            android:id="@+id/btnBold"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:background="@drawable/selector_bold_button"
+            android:textOff=""
+            android:textOn=""
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/btnItalics"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:background="@drawable/selector_italic_button"
+            android:textOff=""
+            android:textOn=""
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/btnChangeTextColor"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:background="@android:color/black"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/button_color" />
+            <ImageButton
+                android:layout_width="42dip"
+                android:layout_height="42dip"
+                android:src="@drawable/camera1_64"
+                android:id="@+id/btnAddPhoto"
+                android:padding="5dp"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

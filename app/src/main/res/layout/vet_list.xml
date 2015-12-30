@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prev_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_vet_list"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/add_64"
+                android:id="@+id/imgAdd" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/home_icon_64"
+                android:id="@+id/imgHome" />
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:divider="#e64c65"
+                android:dividerHeight="1dip"
+                android:footerDividersEnabled="true"
+                android:id="@+id/lvVetList"
+                android:layout_span="4">
+            </ListView>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

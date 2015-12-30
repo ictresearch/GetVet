@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nama_dokter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2b005c"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_dokter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e64c65"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/alamat_dokter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#453a4c"
+        android:textSize="@dimen/text_size" />
+</LinearLayout>

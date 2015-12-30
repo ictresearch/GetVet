@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prev_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_shop_add"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/home_icon_64"
+                android:id="@+id/imgHome" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="@dimen/fix_width_layout"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/picture_100_blue"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/imgPhoto"
+                    android:background="@drawable/round_image"
+                    android:padding="50dp"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.45"
+                        android:src="@drawable/pictures_folder_64"
+                        android:background="@drawable/round_btn"
+                        android:id="@+id/btnAddPhoto"
+                        android:padding="1dp"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.05"
+                        android:visibility="gone"
+                        android:id="@+id/tvPhoto"/>
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.45"
+                        android:src="@drawable/remove_image_64"
+                        android:background="@drawable/round_btn"
+                        android:id="@+id/btnClearPhoto"
+                        android:visibility="gone"
+                        android:padding="1dp"
+                        android:scaleType="fitCenter"/>
+
+                </LinearLayout>
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textMultiLine|textAutoComplete"
+                    android:ems="10"
+                    android:id="@+id/eNama"
+                    android:hint="Your Pet Shop's Name"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="#8f8497"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="@dimen/text_size"
+                    android:drawableLeft="@drawable/clinic_32"
+                    android:drawablePadding="10dp"
+                    android:paddingLeft="10dp"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:ems="10"
+                    android:id="@+id/eAddress"
+                    android:hint="Your Pet Shop's Address"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="#8f8497"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/direction_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/ePhone"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/hp_hint"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8f8497"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/phone_icon_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size"
+                    android:imeOptions="actionNext"/>
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textAutoComplete|textPersonName|textCapCharacters"
+                    android:ems="10"
+                    android:id="@+id/eCity"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/city_hint"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8f8497"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/map_icon_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="0,1"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/round_edit"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TableRow android:layout_marginBottom="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_service_caption"
+                            android:id="@+id/tvHewan"
+                            android:textColor="@android:color/white"
+                            android:layout_span="2"
+                            android:textSize="@dimen/text_size"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="5dp">
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textMultiLine|textCapSentences"
+                            android:ems="10"
+                            android:hint="@string/type_here_shop"
+                            android:textColorHint="#8f8497"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/round_edit"
+                            android:textSize="@dimen/text_size"
+                            android:layout_span="2"
+                            android:paddingLeft="10dp"
+                            android:gravity="top"
+                            android:minHeight="50dp"
+                            android:scrollHorizontally="false"
+                            android:id="@+id/eServices" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edit"
+                    android:stretchColumns="0,1"
+                    android:layout_marginBottom="8dp">
+
+                    <TableRow android:layout_marginBottom="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_hours_caption"
+                            android:id="@+id/tvDokter"
+                            android:textColor="@android:color/white"
+                            android:layout_span="2"
+                            android:textSize="@dimen/text_size"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="5dp">
+                        <EditText
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textMultiLine|textCapSentences"
+                            android:ems="10"
+                            android:hint="@string/type_here_shop"
+                            android:textColorHint="#8f8497"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/round_edit"
+                            android:textSize="@dimen/text_size"
+                            android:layout_span="2"
+                            android:paddingLeft="10dp"
+                            android:gravity="top"
+                            android:minHeight="50dp"
+                            android:scrollHorizontally="false"
+                            android:id="@+id/eJadwal" />
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/btn_save_vet"
+                    android:id="@+id/btnSave"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_selector"
+                    android:textColor="@color/btn_color_selector"
+                    android:textSize="@dimen/button_text_size"
+                    android:textAllCaps="true"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </TableLayout>
+</LinearLayout>

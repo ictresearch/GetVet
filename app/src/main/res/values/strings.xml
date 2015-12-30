@@ -1,0 +1,156 @@
+<resources>
+    <!--Login Form-->
+    <string name="login_name">ActivityLogin</string>
+    <string name="pass_hint">Password</string>
+    <string name="btnlogin_cap">LOGIN</string>
+    <string name="btnregis_cap">REGISTER</string>
+    <!--Iklan-->
+    <string name="iklan_name">IKLAN</string>
+
+    <!--Menu Caption-->
+    <string name="app_name">GetVET</string>
+    <string name="main_name">GETVET MENU</string>
+    <string name="reg_name">REGISTER</string>
+
+    <!--Example-->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--1st Register Form-->
+    <string name="name_hint">Your Name</string>
+    <string name="mail_hint">Your_Name@Email.com</string>
+    <string name="oldpass_hint">Old Password</string>
+    <string name="newpass_hint">New Password</string>
+    <string name="hp_hint">Phone</string>
+    <string name="city_hint">City</string>
+    <string name="btnnext_cap">NEXT</string>
+
+    <!--2nd Register Form-->
+    <string name="label_select_pet">Select Your Favorite Pets :</string>
+    <string name="petname_1st">Cat</string>
+    <string name="petname_2nd">Dog</string>
+    <string name="petname_3rd">Birds</string>
+    <string name="petname_4th">Small Mammals</string>
+    <string name="petname_5th">Fish</string>
+    <string name="petname_6th">Reptiles &amp; Amphibians</string>
+    <string name="petname_7th">Exotic Pets</string>
+    <string name="petname_8th">Equine &amp; Big Mammals</string>
+    <string name="label_who">Who Are You ?</string>
+    <string name="vet_caption">Veterinarian</string>
+    <string name="petshop_caption">Petshop Owner</string>
+    <string name="catken_caption">Cattery / Kennel Owner</string>
+    <string name="user_caption">User / Member</string>
+    <string name="btnreg_cap">REGISTER</string>
+
+    <!--Iklan-->
+    <string name="title_iklan">SPECIAL OFFER</string>
+
+    <!--Home Form-->
+    <string name="title_main_menu">MAIN MENU</string>
+    <string name="home_vet">Veterinarian</string>
+    <string name="home_pet">Pet Shop</string>
+    <string name="home_catken">Cattery Or Kennel</string>
+    <string name="home_art">Forum</string>
+    <string name="home_get">Pet Health System</string>
+
+    <!--Action Setting-->
+    <string name="title_settings">SETTINGS</string>
+    <string name="settings_profile">Profile</string>
+    <string name="settings_vet_clinic">My veterinary clinics</string>
+    <string name="settings_shop">My pet shop</string>
+    <string name="settings_catken">My cattery or kennel</string>
+    <string name="settings_tos">Term of service</string>
+    <string name="settings_spr">Special offer</string>
+    <string name="settings_rate">Rate the app</string>
+    <string name="settings_logout">Logout</string>
+
+    <!--setting notif-->
+    <string name="settings_notiftitle">Notification</string>
+    <string name="settings_notif">Notification Setting</string>
+    <string name="settings_notifthread">Thread</string>
+    <string name="settings_notifcomthreade">Comment Thread</string>
+
+    <!--Profile Setting-->
+    <string name="title_profile">PROFILE</string>
+    <string name="title_ubahpassword">CHANGE PASSWORD</string>
+    <string name="strv_hint">Veterinary License (STRV)</string>
+    <string name="state_hint">State</string>
+    <string name="btn_save_profile">SAVE</string>
+    <string name="btn_change_profile">CHANGE PASSWORD</string>
+
+    <!--My Vet-->
+    <string name="title_vet_list">MY VET CLINICS</string>
+    <string name="title_vet_add">ADD VET CLINIC</string>
+    <string name="btn_save_vet">SAVE</string>
+    <string name="type_here_vet">Type here..</string>
+    <string name="vet_hours_caption">Hours :</string>
+    <string name="vet_service_caption">List of services :</string>
+
+    <!--Vet Search Menu-->
+    <string name="vet_search">VET SEARCH</string>
+    <string name="title_vet_search">GET A VET</string>
+    <string name="title_vet_details">VET DETAILS</string>
+
+    <!--Vet Details-->
+    <string name="vet_details">VET DETAILS</string>
+
+    <!--My Shop-->
+    <string name="title_shop_list">MY PET SHOP</string>
+    <string name="title_shop_add">ADD PET SHOP</string>
+    <string name="btn_save_shop">SAVE</string>
+    <string name="type_here_shop">Type here..</string>
+    <string name="shop_hours_caption">Open Hours :</string>
+    <string name="shop_service_caption">List of Products and Services :</string>
+
+    <!--Shop Search Menu-->
+    <string name="shop_search">PET SHOP SEARCH</string>
+    <string name="title_shop_search">GET A PET SHOP</string>
+    <string name="title_shop_details">PET SHOP DETAILS</string>
+
+    <!--Shop Details -->
+    <string name="shop_details">SHOP DETAILS</string>
+
+    <!--Setting-->
+    <string name="settings_menu">Settings</string>
+
+    <string name="user_profile">PROFILE</string>
+    <string name="my_vet_clinics">MY VETERINARY CLINICS</string>
+    <string name="my_shop">MY PET SHOP</string>
+    <string name="vet_add">ADD VET CLINIC</string>
+    <string name="shop_add">ADD PET SHOP</string>
+    <string name="title_term">TERM OF SERVICE</string>
+    <string name="hit_petshopServic">Type Product and Service here</string>
+    
+    <!--catken-->
+    <string name="catken_add">CATKEN ADD</string>
+    <string name="catken_details">CATKEN DETAILS</string>
+    <string name="catken_search">PET CATKEN SEARCH</string>
+    <string name="catken_list">CATKEN LIST</string>
+    <!--catken add-->
+    <string name="title_catken_add1">ADD CATTERY OR KENNEL</string>
+    <string name="title_catken_add">ADD CATTERY</string>
+    <string name="catken_hours_caption">Open Hours :</string>
+    <string name="catken_service_caption">List of Cats or Dogs :</string>
+    <!--catkan search-->
+    <string name="title_catken_search1">GET A CATTERY OR KENNEL</string>
+    <string name="title_catken_search">GET A CATTERY</string>
+    <!--catkan list-->
+    <string name="title_catken_list1">MY CATTERY OR KENNEL</string>
+    <string name="title_catken_list">MY CATTERY</string>
+    <!--catkan details-->
+    <string name="title_catken_details1">CATTERY OR KENNEL DETAILS</string>
+    <string name="title_catken_details">CATTERY DETAILS</string>
+
+    <string name="spinner_title">Select Category</string>
+    <string name="hint">Type your content here..</string>
+    <!-- forum title-->
+    <string name="title_forumadd">ADD THREAD</string>
+    <string name="btn_post">POST</string>
+    <string name="title_commentadd">ADD COMMENT</string>
+    <string name="title_forum">THREAD</string>
+    <string name="title_forum_main">VET FORUM</string>
+    <string name="title_my_thread">MY THREADS</string>
+    <string name="tittle_my_comment">MY COMMENTS</string>
+    <string name="subcategory_chose">Select Subcategory Pets :</string>
+    <string name="title_category_thread">CATEGORY THREADS</string>
+</resources>

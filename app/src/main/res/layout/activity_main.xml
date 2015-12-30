@@ -1,0 +1,203 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#cfacf6">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/setting_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgSetting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_main_menu"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#2b005c" />
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="70dp"
+                android:id="@+id/lymain">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/vet_icon"
+                        android:background="#5a2495"
+                        android:scaleType="fitEnd"
+                        android:cropToPadding="false"
+                        android:baselineAlignBottom="false"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:id="@+id/imgmenuvet" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="#5a2495"
+                        android:text="@string/home_vet"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/title_text_size"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvmenuvet" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pet_icon"
+                        android:background="#6200d1"
+                        android:scaleType="fitEnd"
+                        android:cropToPadding="false"
+                        android:baselineAlignBottom="false"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:id="@+id/imgmenupet" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="#6200d1"
+                        android:text="@string/home_pet"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/title_text_size"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvmenupet" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/catken_icon1"
+                        android:background="#7f38d1"
+                        android:scaleType="fitEnd"
+                        android:cropToPadding="false"
+                        android:baselineAlignBottom="false"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:id="@+id/imgmenucatken" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="#7f38d1"
+                        android:text="@string/home_catken"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/title_text_size"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvmenucatken" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/forum_icon"
+                        android:background="#a662f3"
+                        android:scaleType="fitEnd"
+                        android:cropToPadding="false"
+                        android:baselineAlignBottom="false"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:id="@+id/imgmenuforum" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="#a662f3"
+                        android:text="@string/home_art"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/title_text_size"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvmenuforum" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/petsystem_icon"
+                        android:background="#cfacf6"
+                        android:scaleType="fitEnd"
+                        android:cropToPadding="false"
+                        android:baselineAlignBottom="false"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:id="@+id/imgmenuget" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="#cfacf6"
+                        android:text="@string/home_get"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/title_text_size"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvmenuget" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+
+            android:scaleType="fitCenter"
+            android:layout_gravity="bottom"
+            android:background="#cfacf6"
+            android:id="@+id/imgBanner"/>
+
+    </FrameLayout>
+</LinearLayout>

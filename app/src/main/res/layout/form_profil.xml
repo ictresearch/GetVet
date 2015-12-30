@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Nama :"/>
+                <EditText
+                    android:id="@+id/etxNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Alamat:"/>
+                <EditText
+                    android:id="@+id/etxAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Telephone :"/>
+                <EditText
+                    android:id="@+id/etxKontak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:phoneNumber="true"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Kota :"/>
+                <AutoCompleteTextView
+                    android:id="@+id/actKota"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Provinsi :" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/actProvinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="No srv :"/>
+                <EditText
+                    android:id="@+id/etxsrv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/round_edit"
+                android:layout_gravity="center_horizontal" >
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_select_pet"
+                        android:id="@+id/textView12"
+                        android:textColor="@android:color/white"
+                        android:layout_span="2"
+                        android:textSize="@dimen/text_size"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/petname_1st"
+                        android:id="@+id/checkBox1"
+                        android:textColor="@android:color/white"
+                        android:checked="false"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/petname_4th"
+                        android:id="@+id/checkBox12"
+                        android:textColor="@android:color/white"
+                        android:checked="false"
+                        android:buttonTint="#c6aae4"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/petname_2nd"
+                        android:id="@+id/checkBox13"
+                        android:textColor="@android:color/white"
+                        android:checked="false"
+                        android:buttonTint="#c6aae4"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/petname_5th"
+                        android:id="@+id/checkBox14"
+                        android:textColor="@android:color/white"
+                        android:checked="false"
+                        android:buttonTint="#c6aae4"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/petname_3rd"
+                        android:id="@+id/checkBox15"
+                        android:textColor="#ffffff"
+                        android:checked="false"
+                        android:buttonTint="#c6aae4"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/petname_6th"
+                        android:id="@+id/checkBox16"
+                        android:textColor="#ffffff"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="@dimen/text_size" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edit"
+                android:stretchColumns="0,1"
+                android:layout_marginBottom="8dp" >
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_who"
+                        android:id="@+id/textView"
+                        android:textColor="@android:color/white"
+                        android:layout_span="2"
+                        android:textSize="@dimen/text_size"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vet_caption"
+                        android:id="@+id/checkBox"
+                        android:textColor="@android:color/white"
+                        android:checked="false"
+                        android:buttonTint="#c6aae4"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/petshop_caption"
+                        android:id="@+id/checkBox2"
+                        android:textColor="@android:color/white"
+                        android:checked="false"
+                        android:buttonTint="#c6aae4"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_caption"
+                        android:id="@+id/checkBox3"
+                        android:textColor="@android:color/white"
+                        android:checked="false"
+                        android:buttonTint="#c6aae4"
+                        android:button="@drawable/chb_icon"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:clickable="true"
+                        android:textSize="@dimen/text_size" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnKlinik_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'MyGetVETKey'
+            keyPassword 'GetVETKey2015'
+            storeFile file('C:/Users/bronky/AndroidStudioProjects/KeyStore/GetVET/getvet.jks')
+            storePassword 'GetVET2015'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.pusatict.getvet"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 23
+        versionName "3.1.4"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.google.android.gms:play-services-analytics:7.8.0'
+    compile 'com.github.yukuku:ambilwarna:2.0'
+    compile 'com.github.windyzboy:CustomEditor:v1.0.1'
+}

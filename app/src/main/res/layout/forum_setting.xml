@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_settings"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/next_icon_64"
+                android:id="@+id/imgBack" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/thread_64"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenuthread" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="My Threads"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenuthread" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivprofile">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/coment_64"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenucoment" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="My Comments"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenucoment" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivseponsor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/exit"
+                    android:background="#ffffff"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/imgmenuout" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:text="Back To Main Menu"
+                    android:textColor="#453a4c"
+                    android:textSize="@dimen/title_text_size"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tvmenuout" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e64c65"
+                android:id="@+id/tvdivout">
+            </TextView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

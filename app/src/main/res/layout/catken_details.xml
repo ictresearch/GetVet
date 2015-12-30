@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prev_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_catken_details1"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/home_icon_64"
+                android:id="@+id/imgHome" />
+        </TableRow>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_height="180dp"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/imgKlinik" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine"
+                    android:text="Global Vet Clinic"
+                    android:textStyle="bold"
+                    android:textColor="#e64c65"
+                    android:gravity="center"
+                    android:id="@+id/tvNamaKlinik"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:text="Pemeriksaan, Pengobatan, Vaksinasi"
+                    android:textColor="#e64c65"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size"
+                    android:id="@+id/tvJasa"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:text="Jln. KH. Noer Ali (Raya Kalimalang), Bekasi, Jawa Barat"
+                    android:textColor="#453a4c"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size"
+                    android:id="@+id/tvAlamat"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/tvDokter"
+                        android:gravity="center_vertical"
+                        android:textColor="#453a4c"
+                        android:scrollHorizontally="false"
+                        android:text="Drh. H. Munawaroh"
+                        android:drawableLeft="@drawable/doctor_icon_20"
+                        android:textSize="@dimen/text_size"
+                        android:drawablePadding="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/tvPhone"
+                        android:gravity="center_vertical"
+                        android:textColor="#453a4c"
+                        android:scrollHorizontally="false"
+                        android:text="(021) 123 4589"
+                        android:drawableLeft="@drawable/phone_icon_20"
+                        android:textSize="@dimen/text_size"
+                        android:drawablePadding="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/tvJadwal"
+                        android:gravity="center_vertical"
+                        android:textColor="#453a4c"
+                        android:scrollHorizontally="false"
+                        android:text="Setiap hari 08.00 - 17.00 (reservasi)"
+                        android:layout_marginBottom="8dp"
+                        android:drawableLeft="@drawable/clock_icon_20"
+                        android:textSize="@dimen/text_size"
+                        android:drawablePadding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_btn_call"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:text="CALL"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/btnCall"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="25dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_btn_call"
+                android:cropToPadding="false"
+                android:baselineAlignBottom="false"
+                android:text="SMS"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/btnSms"
+                android:textSize="@dimen/button_text_size"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="25dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    </TableLayout>
+</LinearLayout>

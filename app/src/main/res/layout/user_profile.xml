@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prev_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_profile"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/home_icon_64"
+                android:id="@+id/imgHome" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="@dimen/fix_width_layout"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/eNama"
+                    android:hint="@string/name_hint"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="#8f8497"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/name_icon_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/eStrv"
+                    android:hint="@string/strv_hint"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="#8f8497"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/diploma_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/eEmail"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/mail_hint"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8f8497"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/mail_icon_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:id="@+id/ePhone"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/hp_hint"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8f8497"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/phone_icon_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/text_size" />
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textAutoComplete|textPersonName|textCapCharacters"
+                    android:ems="10"
+                    android:id="@+id/eProvinsi"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/state_hint"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8f8497"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/geofence_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size" />
+
+                <AutoCompleteTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textAutoComplete|textPersonName|textCapCharacters"
+                    android:ems="10"
+                    android:id="@+id/eCity"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/city_hint"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#8f8497"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:drawableLeft="@drawable/map_icon_32"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edit"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_select_pet"
+                        android:id="@+id/tvHewan"
+                        android:textColor="@android:color/white"
+                        android:layout_span="2"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:text="@string/petname_1st"
+                            android:id="@+id/chbKucing"
+                            android:textColor="@android:color/white"
+                            android:checked="false"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_4th"
+                            android:id="@+id/chbHamster"
+                            android:textColor="@android:color/white"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:clickable="true"
+                            android:paddingLeft="5dp"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_2nd"
+                            android:id="@+id/chbAnjing"
+                            android:textColor="@android:color/white"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_5th"
+                            android:id="@+id/chbKura"
+                            android:textColor="@android:color/white"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:text="@string/petname_3rd"
+                            android:id="@+id/chbBurung"
+                            android:textColor="#ffffff"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_7th"
+                            android:id="@+id/chbExotic"
+                            android:textColor="#ffffff"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:button="@drawable/chb_icon"
+                            android:paddingLeft="5dp"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"
+                            android:text="@string/petname_6th"
+                            android:id="@+id/chbKelinci"
+                            android:textColor="#ffffff"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petname_8th"
+                            android:id="@+id/chbEquine"
+                            android:textColor="#ffffff"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:button="@drawable/chb_icon"
+                            android:paddingLeft="5dp"
+                            android:textSize="@dimen/text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edit"
+                    android:stretchColumns="0,1"
+                    android:layout_marginBottom="8dp">
+
+                    <TableRow android:layout_marginBottom="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_who"
+                            android:id="@+id/tvDokter"
+                            android:textColor="@android:color/white"
+                            android:layout_span="2"
+                            android:textSize="@dimen/text_size"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="5dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vet_caption"
+                            android:id="@+id/chbDokter"
+                            android:textColor="@android:color/white"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="5dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/petshop_caption"
+                            android:id="@+id/chbPet"
+                            android:textColor="@android:color/white"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+                    </TableRow>
+                    <TableRow android:layout_marginBottom="5dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/catken_caption"
+                            android:id="@+id/chbcatken"
+                            android:textColor="@android:color/white"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+                    </TableRow>
+
+                    <TableRow android:layout_marginBottom="5dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_caption"
+                            android:id="@+id/chbUser"
+                            android:textColor="@android:color/white"
+                            android:checked="false"
+                            android:buttonTint="#c6aae4"
+                            android:button="@drawable/chb_icon"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="5dp"
+                            android:clickable="true"
+                            android:textSize="@dimen/text_size" />
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/btn_save_profile"
+                    android:id="@+id/btnSave"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/btn_selector"
+                    android:textColor="@color/btn_color_selector"
+                    android:textSize="@dimen/button_text_size" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/btn_change_profile"
+                    android:id="@+id/btnChangePass"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_selector"
+                    android:textColor="@color/btn_color_selector"
+                    android:textSize="@dimen/button_text_size" />
+
+            </LinearLayout>
+        </ScrollView>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prev_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/settings_notiftitle"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/title_text_size" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/home_icon_64"
+                android:id="@+id/imgHome" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="@dimen/fix_width_layout"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/settings_notifthread"
+                    android:id="@+id/chbThread"
+                    android:textColor="@android:color/black"
+                    android:checked="false"
+                    android:button="@drawable/chb_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="5dp"
+                    android:clickable="true"
+                    android:textSize="@dimen/title_text_size" />
+                <CheckBox
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/settings_notifcomthreade"
+                    android:id="@+id/chbComent"
+                    android:textColor="@android:color/black"
+                    android:checked="false"
+                    android:button="@drawable/chb_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="5dp"
+                    android:clickable="true"
+                    android:textSize="@dimen/title_text_size" />
+
+            </LinearLayout>
+        </ScrollView>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/setting_icon_64"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:id="@+id/imgSetting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#2b005c"
+                android:text="@string/title_forum_main"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="fill_vertical"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:background="#2b005c"
+                android:padding="10dp"
+                android:src="@drawable/refresh_64"
+                android:id="@+id/imgRef" />
+        </TableRow>
+    </TableLayout>
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent" />
+
+    <com.pusatict.getvet.forum.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:background="@color/ColorPrimaryDark" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingBottom="70dp">
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:id="@+id/imgBanner"/>
+    </FrameLayout>
+</LinearLayout>

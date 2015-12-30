@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pusatict.getvet"
+    android:versionCode="3"
+    android:versionName="2.1.0" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+
+    <application
+        android:name=".AnalyticsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:logo="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".tool.NotifyService"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_name"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".FirstRegister"
+            android:label="@string/reg_name"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".NextRegister"
+            android:label="@string/reg_name"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".coba"
+            android:label="@string/iklan_name"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".klinik.VetSearch"
+            android:label="@string/vet_search"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateVisible">
+        </activity>
+
+        <activity
+            android:name=".klinik.VetDetails"
+            android:label="@string/vet_details"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".ActivitySetting"
+            android:label="@string/settings_menu" >
+        </activity>
+        <activity
+            android:name=".SettingNotif"
+            android:label="@string/settings_menu" >
+        </activity>
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/user_profile"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".UserChangePass"
+            android:label="@string/user_profile">
+        </activity>
+
+        <activity
+            android:name=".sponsor.SponsorList"
+            android:label="@string/user_profile" >
+        </activity>
+
+        <activity
+            android:name=".sponsor.iklanView"
+            android:label="@string/user_profile" >
+        </activity>
+
+        <activity
+            android:name=".TeamOfService"
+            android:label="@string/user_profile"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".klinik.VetList"
+            android:label="@string/my_vet_clinics"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+
+        <activity
+            android:name=".klinik.VetAdd"
+            android:label="@string/vet_add"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".ActivityLogin"
+            android:label="@string/login_name"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".shop.ShopSearch"
+            android:label="@string/shop_search"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan|stateVisible">
+        </activity>
+        <activity
+            android:name=".shop.ShopAdd"
+            android:label="@string/shop_add"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".shop.ShopDetails"
+            android:label="@string/shop_details"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".shop.ShopList"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".catken.CatkenSearch"
+            android:label="@string/catken_search"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateVisible">
+        </activity>
+        <activity
+            android:name=".catken.CatkenAdd"
+            android:label="@string/catken_add"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".catken.CatkenDetails"
+            android:label="@string/catken_details"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".catken.CatkenList"
+            android:label="@string/catken_list"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".sponsor.Banner"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".forum.forum_main"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".forum.Tab3_1"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateVisible">
+
+        </activity>
+        <activity
+            android:name=".forum.ForumSetting"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".forum.ForumList"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".forum.CommentList"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".forum.ForumAdd"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".forum.ForumDetails"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity
+            android:name=".forum.ForumCommentAdd"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".forum.ViewCommentList"
+            android:label="@string/my_shop"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+    </application>
+</manifest>
+
+
+    <!--Documentation
+    2015-09-02 :    v 1.0
+                    1st release with minim feature
+                    - Register user, veterinarian using email account
+                    - Update profile
+                    - Add Vet Clinic
+                    - Search Vet Clinic-->
+    <!--
+    2015-09-07 :    v 1.1.0
+                    - Optimize profile synchronization
+                    - Upload your vet clinic's photo
+                    - Auto complete data when choosing existing clinic
+                    - Term of service ready
+                    - Rate the app directly from GetVET
+                    - Bug fixes and performance improvements-->
+

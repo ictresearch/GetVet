@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="10dp">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:background="@drawable/round_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textColor="#ffffff"
+        android:prompt="@string/spinner_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <!--<Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="Category"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:textColor="#2b005c"
+                android:paddingLeft="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#e64c65"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
